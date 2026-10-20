@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juwan Slabbert | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --page: #131a21;
+      --panel: #1b2530;
+      --ink: #e4ebf0;
+      --muted: #9db0bc;
+      --accent: #4fc3c9;
+      --tint: #243240;
+      --line: #34475a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    /* Two columns: fixed profile on the left, CV content on the right */
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .profile {
+      position: sticky;
+      top: 0;
+      align-self: start;
+      height: 100vh;
+      padding: 3rem 2rem;
+      background: var(--panel);
+      border-right: 3px solid var(--accent);
+    }
+
+    .profile h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 2.2rem;
+      line-height: 1.15;
+      margin: 0 0 0.4rem;
+    }
+
+    .profile .headline { margin: 0 0 2rem; color: var(--muted); }
+
+    .profile h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 0 0.5rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.35rem;
+    }
+
+    .profile ul { list-style: none; margin: 0; padding: 0; }
+    .profile li { margin-bottom: 0.45rem; word-break: break-word; }
+
+    main { padding: 3rem 3rem 4rem; }
+
+    section { margin-bottom: 2.75rem; }
+
+    main h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.6rem;
+      margin: 0 0 1rem;
+      color: var(--accent);
+    }
+
+    main p { max-width: 65ch; margin: 0 0 1rem; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
+    .skills li {
+      background: var(--tint);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .entry { margin-bottom: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--line); }
+    .entry h3 { margin: 0; font-size: 1.1rem; }
+    .entry .where { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .entry ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+
+    /* Stack the columns on phones and small tablets */
+    @media (max-width: 800px) {
+      .layout { grid-template-columns: 1fr; }
+      .profile { position: static; height: auto; padding: 2rem 1.5rem; border-right: 0; border-bottom: 3px solid var(--accent); }
+      main { padding: 2rem 1.5rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="profile">
+      <h1>Juwan Slabbert</h1>
+      <p class="headline">Student of software engineering and AI</p>
+
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:slabbertjuwan@gmail.com">slabbertjuwan@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/juvi-gis">github.com/juvi-gis</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>About me</h2>
+        <p>I am a student GIS data analyst and a coding and AI enthusiast, starting my career in GIS data analysis, Python, and AI. I recently finished my GED with an American institution, and I am a student on the Stellenbosch University HyperionDev bootcamp, studying part-time while I build my skills.</p>
+        <p>I have completed a six-month internship and want to build on it with experience in GIS, coding, and AI. I am also keen on related work such as data validation, software testing, and Python and AI projects that I can do from home while I study. I am patient, kind, and a fast learner, and I can stay focused on a task for long periods until it is done.</p>
+        <p>I am available immediately, alongside my part-time studies. Outside of work, I enjoy the gym and competitive gaming.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills and competencies</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>Object-oriented programming</li>
+          <li>Algorithms and data structures</li>
+          <li>Django</li>
+          <li>REST APIs with Django REST Framework</li>
+          <li>User authentication and permissions</li>
+          <li>MySQL and MariaDB</li>
+          <li>Unit testing and mocking</li>
+          <li>Git and GitHub</li>
+          <li>HTML and CSS</li>
+          <li>Problem solving</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+          <h3>Stellenbosch University Bootcamp</h3>
+          <p class="where">HyperionDev, 2026 to present</p>
+          <ul>
+            <li>Levels 1 and 2: Python fundamentals, object-oriented programming, and algorithms</li>
+            <li>HTML, CSS, and publishing static sites with Git and GitHub Pages</li>
+            <li>Django web development, including user authentication and permissions</li>
+            <li>REST APIs with Django REST Framework, MySQL and MariaDB databases, and unit testing</li>
+            <li>Projects include a task manager, a Django eCommerce application, and a news application</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>General Educational Development (GED)</h3>
+          <p class="where">2025</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Work experience</h2>
+        <p>I am looking to gain further experience in GIS, coding, and AI. Alongside my internship, I have been building projects to practise the skills above.</p>
+        <div class="entry">
+          <h3>Internship</h3>
+          <p class="where">[Organisation], six months</p>
+          <ul>
+            <li>[What you did and what you learned]</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>Task manager</h3>
+          <p class="where">Python</p>
+          <ul>
+            <li>Command-line app with user login, role-based access, task editing, and generated reports</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>Shoe inventory system</h3>
+          <p class="where">Python</p>
+          <ul>
+            <li>Inventory tool that reads and saves stock data to a file, with restocking and search</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>eCommerce application</h3>
+          <p class="where">Django</p>
+          <ul>
+            <li>Web app with user authentication, permission groups, sessions, and password reset</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>News application</h3>
+          <p class="where">Django, Django REST Framework, MariaDB</p>
+          <ul>
+            <li>Readers, journalists, and editors with different permissions, an article approval process, a token-secured API, and unit tests</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
